@@ -1,46 +1,51 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 function validar() {
-  var nome = document.getElementById("nome");
-  var cpf = document.getElementById("cpf");
-  var email = document.getElementById("email");
-  var data = document.getElementById("data");
-  var celular = document.getElementById("celular");
-  var sexo = document.getElementById("sexo");
-  var styles = { border: "2px solid red" }
-  var msg = "Por favor preencha o(s) campo(s) abaixo:\n\n";
+    let campos = [];
+    let nome = document.getElementById('nome').value;
+    let cpf = document.getElementById('cpf').value;
+    let data = document.getElementById('data').value;
+    let sexo = document.getElementById('sexo').value;
+    let email = document.getElementById('email').value;
+    let celular = document.getElementById('celular').value;
+    let media = document.getElementById('media').value;
+    let nivel = document.getElementById('nivel').value;
 
-  if (nome.value == "") {
-    msg += "- Nome completo\n";
-    nome.style.outline = "2px solid red"
-  }
-  if (cpf.value == "") {
-    msg += "- CPF\n";
-    cpf.style.outline = "2px solid red"
-  }
-  if (data.value == "") {
-    msg += "- Nascimento\n";
-    data.style.outline = "2px solid red"
-  }
-  if (sexo.value == "") {
-    msg += "- Sexo\n";
-    sexo.style.outline = "2px solid red"
-  }
-  if (email.value == "") {
-    msg += "- Email\n";
-    email.style.outline = "2px solid red"
-  }
-  if (celular.value == "") {
-    msg += "- Celular\n";
-    celular.style.outline = "2px solid red"
-  }
-  if (nivel.value == "") {
-    msg += "- Nível\n";
-    nivel.style.outline = "2px solid red"
-  }
-  if (media.value == "") {
-    msg += "- Média\n";
-    media.style.outline = "2px solid red"
-  }
+    const dataForm = [
+        { label: "Nome", valor: nome },
+        { label: "CPF", valor: cpf },
+        { label: "Nascimento", valor: data },
+        { label: "Sexo", valor: sexo },
+        { label: "E-mail", valor: email },
+        { label: "Celular", valor: celular },
+        { label: "Média", valor: media },
+        { label: "Nível", valor: nivel }
+    ];
 
-  alert(msg);
-
+    for (let i = 0; i < dataForm.length; i++) {
+        if (dataForm[i].valor == "") {
+            campos.push(dataForm[i].label);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: `Por favor preencha o(s) campo(s) abaixo: ${campos.join(', ')}`,
+            });
+        } else {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Aluno cadastrado com sucesso!',
+                showConfirmButton: false,
+                timer: 2500
+            });
+        }
+    }
 }

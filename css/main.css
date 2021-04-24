@@ -1,110 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	background: #f5f5f5;
-}
-
-header {
-	padding: 20px;
-	background: #fff;
-	text-align: center;
-}
-
-nav {
-	text-align: center;
-	background: #222325;
-	padding: 20px;
-}
-
-nav a {
-	color: #fff;
-	display: inline-block;
-	margin: 0 10px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-nav a:hover {
-	font-weight: bold;
+    background: var(--primary-color);
+    color: #222;
+    margin: 0;
+    padding: 0 !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul {
-	margin: 0;
-	padding: 0 0 0 16px;
+    list-style: none;
 }
 
-hr {
-	margin: 30px 0;
+a {
+    text-decoration: none;
 }
 
-.my-container {
-	max-width: 960px;
-	margin: 0 auto;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-section {
-	padding: 40px 20px;
+* {
+    transition: 1s cubic-bezier(0, 1.29, .67, .9);
+    box-sizing: border-box;
 }
 
-section:nth-child(odd) {
-	background: #fff;
+header {
+    height: 400px;
+    color: #000;
+    background-image: url("https://ligaempresarialportugal.mygol.es/upload/68/BF/nxbmxtno.png");
 }
 
-#banner {
-	padding: 0;
-	text-align: center;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-#banner img {
-	max-width: 100%;
+header nav ul {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+#conteudo p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 0 5px 0;
+}
+
+.navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.226);
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.txt-center {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.list-bullet-styled {
+    list-style: circle;
+    margin-left: 40px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+#conteudo {
+    background: #e5e5e5;
+    padding: 15px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.my-container h2 {
+    margin: 25px 25px;
+    text-align: center;
 }
 
 #cadastrar {
-
+    padding: 15px;
 }
 
-#cadastrar ul {
-	padding: 0;
-	list-style: none;
-	margin-bottom: 30px;
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 50%;
 }
 
-#cadastrar ul li {
-	display: block;
-	margin-bottom: 20px;
+.form-children {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-#cadastrar ul li label {
-	display: inline-block;
-	width: 112px;
+.form-children div {
+    margin-bottom: 10px;
 }
 
-#cadastrar ul li input {
-	min-width: 200px;
-	display: inline-block;
+.form-children input {
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 5px;
 }
 
-#lista table {
-	width: 100%;
-	vertical-align:top;
-	text-align: left;
+.form-children select {
+    display: block;
+    width: 90%;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
 }
 
-#lista table tr th, #lista table tr td {
-	border: 1px solid #ccc;
-	padding: 8px;
+form ul li {
+    list-style: none;
+    padding: 15px 0 15px 0;
+}
+
+form p {
+    padding: 15px 0 15px 0;
+}
+
+form button {
+    padding: 15px 0 15px 0;
+}
+
+label {
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #616161;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: text;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+}
+
+input:required {
+    border-bottom: 2px dashed red;
+}
+
+input:valid {
+    border-bottom: 2px solid black;
+}
+
+select:required {
+    border-bottom: 2px dashed red;
+}
+
+select:valid {
+    border-bottom: 2px solid black;
+}
+
+button {
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#button-form {
+    background: #05539b;
+    color: #fff;
+    width: 240px;
+}
+
+#button-form:active {
+    transition: 0.2s;
+    opacity: 0.3;
+}
+
+#lista {
+    background: #e5e5e5;
+    padding: 15px;
+    min-height: 100px;
+}
+
+#table-alunos {
+    border-collapse: collapse;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 25px;
+}
+
+#table-alunos tr {
+    height: 2rem;
+}
+
+#table-alunos tr td:last-child {
+    border: 1px solid black;
+}
+
+thead {
+    background: #ccc;
+}
+
+tr:hover {
+    background-color: #3d80df;
+    color: #fff;
+}
+
+thead tr:hover {
+    background-color: transparent;
+    color: inherit;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 0.1em 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #30b6f6;
 }
 
 .color-red {
-	background: red;
-	color: #fff;
+    background-color: red;
 }
+
 .color-green {
-	background: #3c3;
-	color: #fff;
+    background-color: green;
 }
 
 footer {
-	padding: 60px 20px;
-	background: #06549c;
-	color: #fff;
-	text-align: center;
+    background-color: #05539b;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
 }
