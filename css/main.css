@@ -15,7 +15,7 @@ body {
     color: #222;
     margin: 0;
     padding: 0 !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 ul {
@@ -39,7 +39,7 @@ img {
 header {
     height: 400px;
     color: #000;
-    background-image: url("https://ligaempresarialportugal.mygol.es/upload/68/BF/nxbmxtno.png");
+    background-image: url("https://ligaempresarialportugal.mygol.es/upload/68/BF/nxbmxtno.png") !important;
 }
 
 a {
@@ -62,19 +62,20 @@ header nav li {
     padding: 5px 0 5px 0;
 }
 
-.navbar {
+.my-navbar {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     padding: 20px 0;
     background: rgba(0, 0, 0, 0.226);
+    height: 70px;
 }
 
-.navbar a {
+.my-navbar a {
     color: #fff;
 }
 
-.navbar a:hover {
+.my-navbar a:hover {
     opacity: 0.3;
     transition: 0.3s;
 }
@@ -89,7 +90,7 @@ header nav li {
     margin-left: 40px;
 }
 
-.header-content {
+.my-header-content {
     max-width: 400px;
     margin: 150px auto;
     text-align: center;
@@ -100,7 +101,7 @@ header nav li {
     padding: 15px;
 }
 
-.container {
+.my-container {
     max-width: 960px;
     margin: 0 auto;
 }
