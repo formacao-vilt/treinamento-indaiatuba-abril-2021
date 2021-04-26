@@ -6,7 +6,7 @@ p,
 ul,
 li,
 a {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
 }
 
@@ -122,82 +122,6 @@ header nav li {
     flex-grow: 50%;
 }
 
-.form-children {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-children div {
-    margin-bottom: 10px;
-}
-
-.form-children input {
-    width: 90%;
-    border: 0;
-    border-bottom: 2px solid #9e9e9e;
-    outline: none;
-    transition: .2s ease-in-out;
-    box-sizing: border-box;
-    margin-top: 5px;
-}
-
-.form-children select {
-    display: block;
-    width: 90%;
-    padding: 10px 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    border: 0;
-    border-bottom: 2px solid #9e9e9e;
-    outline: none;
-}
-
-form ul li {
-    list-style: none;
-    padding: 15px 0 15px 0;
-}
-
-form p {
-    padding: 15px 0 15px 0;
-}
-
-form button {
-    padding: 15px 0 15px 0;
-}
-
-label {
-    top: 0;
-    left: 0;
-    right: 0;
-    color: #616161;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    cursor: text;
-    transition: .2s ease-in-out;
-    box-sizing: border-box;
-}
-
-input:required {
-    border-bottom: 2px dashed red;
-}
-
-input:valid {
-    border-bottom: 2px solid black;
-}
-
-select:required {
-    border-bottom: 2px dashed red;
-}
-
-select:valid {
-    border-bottom: 2px solid black;
-}
-
 button {
     border-radius: 8px;
     font-weight: bold;
@@ -285,3 +209,4 @@ footer p {
     color: #fff;
     text-align: center;
 }
+
