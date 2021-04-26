@@ -1,0 +1,14 @@
+#conteudo p, #conteudo ul, #conteudo h2 {
+  text-align: left;
+  margin: 20px auto;
+  line-height: .875rem;
+}
+
+#conteudo ul {
+  list-style: outside;
+  padding-left: 50px;
+}
+
+#conteudo {
+  padding: 20px 50px;
+}

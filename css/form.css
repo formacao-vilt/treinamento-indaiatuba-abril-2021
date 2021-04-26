@@ -1,0 +1,50 @@
+
+#cadastrar form {
+  display: grid;
+}
+
+#cadastrar form label {
+  text-align: left;
+}
+
+
+#cadastrar form label {
+  margin: 0 auto;
+  padding: 10px 0px;
+  width: 500px;
+}
+
+#cadastrar form input,
+#cadastrar form button,
+#cadastrar form select {
+  width: 500px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 869px) {
+  #cadastrar form label,
+  #cadastrar form input,
+  #cadastrar form button,
+  #cadastrar form select {
+    width: 80%;
+  }
+}
+
+#cadastrar form button {
+  margin-top: 20px;
+  background: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cadastrar form button:hover {
+  background: #000;
+  color: #fff;
+}
