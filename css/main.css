@@ -6,7 +6,7 @@ p,
 ul,
 li,
 a {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 header {
-    height: 400px;
+    height: calc(100vh - 250px);
     color: #000;
     background-image: url("https://ligaempresarialportugal.mygol.es/upload/68/BF/nxbmxtno.png") !important;
 }
@@ -47,13 +47,13 @@ a {
     color: inherit;
 }
 
-header nav ul {
+.my-navbar ul {
     list-style: none;
     display: flex;
     font-weight: bold;
 }
 
-header nav li {
+.my-navbar li {
     margin: 0 15px;
 }
 
@@ -101,12 +101,7 @@ header nav li {
     padding: 15px;
 }
 
-.my-container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.my-container h2 {
+.container h2 {
     margin: 25px 25px;
     text-align: center;
 }
@@ -146,7 +141,8 @@ button {
     min-height: 100px;
 }
 
-#table-alunos {
+
+/*#table-alunos {
     border-collapse: collapse;
     width: 100%;
     border-left: none;
@@ -189,6 +185,40 @@ tr:nth-child(even) {
     background-color: #30b6f6;
 }
 
+*/
+
+#table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#table tr:nth-child(even) {
+    background-color: #30b6f6;
+}
+
+#table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+#table th,
+#table td {
+    padding: .625em;
+    text-align: center;
+}
+
+#table th:hover {
+    background-color: #3d80df;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
 .color-red {
     background-color: red;
 }
@@ -210,3 +240,44 @@ footer p {
     text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+    #table {
+        border: 0;
+    }
+    #table caption {
+        font-size: 1.3em;
+    }
+    #table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    #table tr {
+        border-bottom: 3px solid grey;
+        display: block;
+        margin-bottom: .625em;
+    }
+    #table td {
+        border-bottom: 1px solid grey;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+    #table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+    #table td:last-child {
+        border-bottom: 0;
+    }
+    #table tr:nth-child(even) {
+        background-color: #f8f8f8;
+    }
+}
