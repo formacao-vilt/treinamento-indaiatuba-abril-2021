@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-
+fit=no">
+
+    <title>Treinamento Indaiatuba Abril 2021</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/utilizando-bootstrap.css">
+</head>
+
+<body>
+
+    <nav class="nav justify-content-center">
+        <a class="nav-link fw-bolder text-decoration-none" href="#conteudo">Conteúdo</a>
+        <a class="nav-link fw-bolder text-decoration-none" href="#cadastrar">Cadastrar</a>
+        <a class="nav-link fw-bolder text-decoration-none" href="#lista">Lista de alunos</a>
+    </nav>
+
+    <header class="text-center m-4">
+        <h1>Treinamento Indaiatuba Abril 2021</h1>
+    </header>
+
+    <section id="banner">
+        <img src="https://i.picsum.photos/id/210/1600/350.jpg?hmac=u5C8ihcdKxZE0rfrOYEZtcZAtuGdQGFflz4x4n9dFDA" alt="">
+    </section>
+
+    <section id="conteudo">
+        <div class="container p-5">
+            <h2>HTML básico</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            </p>
+            <p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </section>
+
+    <section id="cadastrar">
+        <div class="container p-5">
+            <h2>Cadastro de Aluno</h2>
+
+            <form name="form" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label class="form-label">Nome completo</label>
+                    <input type="text " class="form-control" id="nome " name=" " onclick="style.outline=null" required>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">CPF</label>
+                    <input type="text " class="form-control" id="cpf " name=" " onclick="style.outline=null " required>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Nascimento</label>
+                    <input type="date" class="form-control" id="data " name=" " onclick="style.outline=null " required placeholder="dd/mm/aaaa ">
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Sexo</label>
+                    <select id="sexo" class="form-select" name="sexo" onclick="style.outline=null " required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email " name=" " onclick="style.outline=null " required>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="celular " name=" " onclick="style.outline=null " required>
+                </div>
+                <hr>
+                <div class="col-md-3">
+                    <label class="form-label">Nível</label>
+                    <select id="nivel" class="form-select" name="nivel " onclick="style.outline=null " required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="novato">Novato</option>
+                    <option value="formado">Formado</option>
+                    <option value="veterano">Veterano</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Média</label>
+                    <input type="number" class="form-control" id="media " name="media " onclick="style.outline=null " required>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <button class="btn btn-dark" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="lista">
+        <div class="container p-4">
+            <h2>Lista de alunos</h2>
+            <table class="table caption-top">
+                <thead>
+                    <tr>
+
+                        <th>Nome completo</th>
+                        <th>CPF</th>
+                        <th>Nascimento</th>
+                        <th>Sexo</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                        <th>Nivel</th>
+                        <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td class="table-danger">4</td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td class="table-success">9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-primary text-center ">
+        Copyright 2021 | VILT GROUP
+    </footer>
+
+    <!-- js -->
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/utilizando-bootstrap.js "></script>
+</body>
+
+</html>

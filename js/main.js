@@ -1,46 +1,36 @@
-function validar() {
-  var nome = document.getElementById("nome");
-  var cpf = document.getElementById("cpf");
-  var email = document.getElementById("email");
-  var data = document.getElementById("data");
-  var celular = document.getElementById("celular");
-  var sexo = document.getElementById("sexo");
-  var styles = { border: "2px solid red" }
-  var msg = "Por favor preencha o(s) campo(s) abaixo:\n\n";
+function validar(){
+    var nome = document.getElementById("nome");
+    var cpf = document.getElementById("cpf");
+    var data = document.getElementById("data");
+    var sexo = document.getElementById("sexo");
+    var email = document.getElementById("email");
+    var celular = document.getElementById("celular");
+    var nivel = document.getElementById("nivel");
+    var media= document.getElementById("media");
 
-  if (nome.value == "") {
-    msg += "- Nome completo\n";
-    nome.style.outline = "2px solid red"
-  }
-  if (cpf.value == "") {
-    msg += "- CPF\n";
-    cpf.style.outline = "2px solid red"
-  }
-  if (data.value == "") {
-    msg += "- Nascimento\n";
-    data.style.outline = "2px solid red"
-  }
-  if (sexo.value == "") {
-    msg += "- Sexo\n";
-    sexo.style.outline = "2px solid red"
-  }
-  if (email.value == "") {
-    msg += "- Email\n";
-    email.style.outline = "2px solid red"
-  }
-  if (celular.value == "") {
-    msg += "- Celular\n";
-    celular.style.outline = "2px solid red"
-  }
-  if (nivel.value == "") {
-    msg += "- Nível\n";
-    nivel.style.outline = "2px solid red"
-  }
-  if (media.value == "") {
-    msg += "- Média\n";
-    media.style.outline = "2px solid red"
-  }
-
-  alert(msg);
-
+    if(nome.value == ""){
+        document.getElementById("nome").style.border = "2px solid #ef3c59"; 
+    }
+    if(cpf.value == ""){
+        document.getElementById("cpf").style.border = "2px solid #ef3c59"; 
+    }
+    if(data.value == ""){ 
+        document.getElementById("data").style.border = "2px solid #ef3c59"; 
+    }
+    if(sexo.value == ""){
+        document.getElementById("sexo").style.border = "2px solid #ef3c59"; 
+    }
+    if(email.value == ""){
+        document.getElementById("email").style.border = "2px solid #ef3c59"; 
+    }
+    if(celular.value == ""){ 
+        document.getElementById("celular").style.border = "2px solid #ef3c59"; 
+    }
+    if(nivel.value == ""){  
+        document.getElementById("nivel").style.border = "2px solid #ef3c59"; 
+    }
+    if(media.value == ""){  
+        document.getElementById("media").style.border = "2px solid #ef3c59"; 
+    }
+    alert("Preencha os campos em vermelho!")
 }
