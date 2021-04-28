@@ -1,0 +1,128 @@
+#cabecalho{
+    background-color: rgb(29, 25, 25);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction:row ;
+    text-align: center;
+    
+}
+
+.menu-navegacao{
+    text-decoration: none;
+    color: white;
+    margin-top: 25px;
+    margin-left:25px ;
+    left: -10px;
+    position: relative;
+
+}
+
+.menu-navegacao:active{
+    color: white;
+}
+
+.menu-navegacao:hover{
+    text-decoration: underline;
+}
+
+
+
+#imagem{
+    width: 100%;
+}
+
+#titulo{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#conteudo{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: rgb(245, 238, 238);
+}
+
+#cadastrar{
+  
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#lista{
+    
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: rgb(245, 238, 238);
+    
+}
+
+.formatando-lista{
+    list-style: none;
+    
+}
+li{
+    margin-bottom: 20px;
+}
+
+.formatando-campos{
+    position: absolute;
+   left: 280px;
+}
+#nivel{
+    position: relative;
+    left: 37px;
+}
+
+
+table{
+    margin-left: -2px;
+    border-collapse: collapse;
+    margin-bottom: 35px;
+   
+}
+td,th{
+    width: 115px;
+    text-align: left;
+}
+
+label{
+    position: relative;
+    left: -30px;
+}
+
+#obrigatorio{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+button{
+    margin-top: 15px;
+    margin-bottom: 56px;
+}
+
+footer{
+    height: 100px;
+    background: #05539b;;
+	
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.cor-vermelha{
+    background: red;
+    color: aliceblue;
+}
+.cor-verde{
+    background: green;
+    color: white;
+}
