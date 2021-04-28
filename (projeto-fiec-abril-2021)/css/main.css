@@ -1,0 +1,210 @@
+#cabecalho{
+    background-color: rgb(29, 25, 25);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.links:active{
+    color: white;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+#link1{
+    position: relative;
+    left: -130px;
+    top: 28px;
+}
+
+#link2{
+    position: relative;
+    left: -10px;
+    top: 10px;
+   
+}
+
+#link3{
+    position: relative;
+    left: 130px;
+    top: -9px;
+}
+
+#imagem{
+    width: 100%;
+}
+
+#titulo{
+    text-align: center;
+}
+
+#conteudo{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(245, 238, 238);
+    margin-top: -23px;
+}
+
+
+#cadastrar{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#lista{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(245, 238, 238);
+}
+
+#container3{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.listas{
+    list-style: none;
+}
+
+.campos{
+    margin-bottom: 20px;
+}
+
+#nome{
+    position: relative;
+    left: -20px;
+}
+
+#cpf{
+    position: relative;
+    left: 49px;
+}
+
+#data{
+    position: relative;
+    left: 6px;
+}
+
+#sexo{
+    position: relative;
+    left: 46px;
+}
+
+#email{
+    position: relative;
+    left: 44px;
+}
+
+#celular{
+    position: relative;
+    left: 33px;
+}
+
+#nivel{
+    position: relative;
+    left: 45px;
+    margin-top: 30px;
+}
+
+#media{
+    position: relative;
+    left: 38px;
+}
+
+#btncadastro{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+label{
+    position: relative;
+    left: -30px;
+}
+
+#obrigatorio{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#tabela,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#tabela{
+    position: relative;
+    width: 100%;
+}
+
+tr{
+    height: 35px;
+}
+
+.color-red{
+    background-color: red;
+    color: white;
+}
+
+.color-green{
+    background-color: green;
+    color: white;
+}
+
+footer{
+    background-color: rgb(64, 64, 134);
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+
+#copy{
+    position: relative;
+    margin-top: 0px;
+    top: 43px;
+}
+
+
+
+@media (max-width: 560px) {
+    input{
+        width: 100px;
+    }
+}
+
+@media (max-width: 530px) {
+    .titulos{
+        font-size: small;
+    }
+}
+
+@media (max-width: 472px) {
+    input{
+        width: 80px;
+    }
+    .titulos{
+        font-size:xx-small
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    input{
+        width: 60px;
+    }
+    .titulos{
+        font-size:xx-small
+    }
+}
+
