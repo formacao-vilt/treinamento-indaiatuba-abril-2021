@@ -71,27 +71,30 @@
   <section id="cadastrar">
     <div class="my-container">
       <h2>Cadastro de Aluno</h2>
-
-      <form>
+      <form class="needs-validation" novalidate>
         <div class="row">
           <div class="col">
           <label for="nome">Nome completo*</label>
-          <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+          <input type="text" class="form-control" id="nome" placeholder="Nome completo" required>
+          <div class="invalid-feedback">Por favor insira o nome completo.</div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <label for="cpf">CPF*</label>
-            <input type="text" class="form-control" id="cpf" placeholder="XXX.XXX.XXX-XX">
+            <input type="text" class="form-control" id="cpf" placeholder="XXX.XXX.XXX-XX" required>
+            <small id="cpfHelp" class="form-text text-muted">Apenas números.</small>
+            <div class="invalid-feedback">Por favor insira o CPF.</div>
           </div>
           <div class="col-md-4">
             <label for="inputPassword4">Data de nascimento*</label>
-            <input type="date" class="form-control" id="data" placeholder="dd/mm/aaaa">
+            <input type="date" class="form-control" id="data" placeholder="dd/mm/aaaa" required>
+            <div class="invalid-feedback">Por favor insira a data de nascimento.</div>
           </div>
           <div class="col-md-4">
             <label for="sexo">Sexo*</label>
             <select class="form-control" id="sexo">
-              <option value="">Selecione</option>
+              <option value="" selected disabled hidden>Selecione...</option>
               <option>Feminino</option>
               <option>Masculino</option>
               <option>Outro</option>
@@ -101,11 +104,14 @@
         <div class="row">
           <div class="col-md-6">
             <label for="email">E-mail*</label>
-            <input type="email" class="form-control" id="email" placeholder="E-mail">
+            <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+            <div class="invalid-feedback">Por favor insira o e-mail.</div>
           </div>
           <div class="col-md-6">
             <label for="celular">Celular*</label>
-            <input type="text" class="form-control" id="celular" placeholder="(XX)XXXXX-XXXX">
+            <input type="text" class="form-control" id="celular" placeholder="(XX)XXXXX-XXXX" required>
+            <small id="celularHelp" class="form-text text-muted">Apenas números.</small>
+            <div class="invalid-feedback">Por favor insira o número do celular.</div>
           </div>
         </div>
         <hr>
@@ -113,7 +119,7 @@
           <div class="col-md-6">
             <label for="nivel">Nível*</label>
             <select class="form-control" id="nivel">
-              <option value="">Selecione</option>
+              <option value="" disabled selected hidden>Selecione...</option>
               <option value="novato">Novato</option>
               <option value="formado">Formado</option>
               <option value="veterano">Veterano</option>
@@ -121,7 +127,8 @@
           </div>
           <div class="col-md-6">
             <label for="media">Média*</label>
-            <input type="text" class="form-control" id="media" placeholder="Média">
+            <input type="text" class="form-control" id="media" placeholder="Média" required>
+            <div class="invalid-feedback">Por favor insira a média.</div>
           </div>
         </div>
         <hr>
