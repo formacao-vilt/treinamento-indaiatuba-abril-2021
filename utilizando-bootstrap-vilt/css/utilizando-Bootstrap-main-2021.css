@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Nunito:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+body{
+    background-color:  rgb(245, 241, 241);
+}
+
+nav { /* bloco de opções*/
+ margin: auto;
+ overflow: hidden;
+ background-color: rgb(255, 255, 255);
+ width: 100%;
+ max-width: 100%;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ display: flex;
+ justify-content: center;
+}
+
+a { /* conteudo das opções*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Roboto;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    }
+
+nav a {/* conteudo das opções box */
+    background-color:rgb(255, 255, 255);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+nav a:hover { /* conteudo das opções houver*/
+        font-family:Arial, Helvetica, sans-serif ;
+        text-decoration: underline;
+        color: rgb(133, 6, 6);
+    }
+
+header{ /*titulo box*/
+   width:100%;
+}
+
+h1 { /*titulo box*/
+    font-size: 60px;
+    text-align: center;
+   }
+
+img { /*banner*/
+   
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 500px; 
+    min-height: 200px;      
+   }
+
+
+h1, h2{ /*titulos*/
+    font-family: 'Orelega One', cursive;
+    color: rgb(17, 17, 17);
+}
+h2 {/*titulo tam*/
+    font-size: 40px;   
+}
+
+#cadastro h2 { /*titulo cadastro*/
+  text-align: center;
+}
+#texto { /*corpo texto*/
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 20px;
+    font-family: nunito;
+    font-size: 20px;
+}
+
+#cadastrar {/*menu de cadastro box*/
+    background-color: rgb(255, 255, 255);
+    max-width: 700px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+form input {/*inputs*/
+    border-radius: 10px;
+    font-family: roboto;
+    height: 23px;
+    border: none;
+    box-shadow: rgba(133, 6, 6, 0.212) 0px 0px 0px 2px;
+    max-width: 300px;
+    
+}
+
+label, p{ /*cadastro nome dos campos label*/
+    font-family: roboto;
+}
+
+/*button { /*botao
+
+    background-color: #ebebeb; 
+    border-radius: 15px;
+    color: rgb(12, 12, 12);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-bock;
+    font-size: 16px;
+    max-width: 100px;
+    margin: 6px;
+    box-shadow: rgba(10, 10, 10, 0.35) 0px 5px 15px;
+    border: none;
+    position: relative;
+    font-family: roboto;
+  
+}*/
+
+button:hover{ /*botao houver*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-decoration: underline;
+    color: rgb(133, 6, 6);
+}
+
+#cadastrar select{ /*select do cadastro 2*/
+    border-radius: 10px;
+    font-family: roboto;
+    border: none;
+    box-shadow: rgba(133, 6, 6, 0.212) 0px 0px 0px 2px;
+}
+
+ #lista { /*texto da tabela*/
+    
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(240, 223, 223, 0.616);
+}
+/* table tabela
+{
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    display: auto;
+    overflow:auto;
+
+   
+}*/
+
+table, td, th {/*tabela linhas*/
+    border-bottom: 1px solid rgb(17, 17, 17);
+
+}
+td { /*tabela celula*/
+    max-height: 50px;
+    vertical-align: left;
+}
+th, td { /*tabela celulas 2*/
+    padding: 10px;
+    text-align: left;
+    font-family: nunito;
+   
+}
+
+footer{/*rodapé*/
+    max-width: 100%;
+    max-height: 20px;
+    background: rgb(56, 46, 46);
+    font-family: nunito;
+    padding: 30px 6px;
+    text-align:center;
+    color: lightyellow;
+    font-size: 15px;
+    
+}
+
+
+
+ 
