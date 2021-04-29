@@ -1,3 +1,4 @@
+//comet
 function validar() {
   var nome = document.getElementById("nome");
   var cpf = document.getElementById("cpf");
