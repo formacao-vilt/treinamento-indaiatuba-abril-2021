@@ -1,0 +1,88 @@
+nav{
+    background-color: black;
+    width: 100vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+a:link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+}
+header{
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+#banner img{
+    width: 100vw;
+    margin: 0;  
+}
+#conteudo{
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    width: 100vw;
+    padding-top: 1%;
+}
+.my-container{
+    text-align: justify;
+    font-family: 'Segoe UI';
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 5%;
+}
+#nome{
+    margin-left: 2%;
+} 
+#cpf{
+    margin-left: 13.4%;
+} 
+#data{
+    margin-left: 5.9%;
+} 
+#sexo{
+    margin-left: 12.5%;
+} 
+#email{
+    margin-left: 12%;
+} 
+#celular{
+    margin-left: 10.5%;
+} 
+#nivel{
+    margin-left: 12%;
+} 
+#media{
+    margin-left: 10.9%;
+}
+#lista{
+    font-family: 'Segoe UI';
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    width: 100vw;
+    padding-top: 1%;
+}
+table{
+    padding: 1px;   
+}
+.color-red{
+    background-color: red;
+}
+.color-green{
+    background-color: green;
+}
+body{
+    overflow-x: hidden;
+}
+footer{
+    font-family: 'Segoe UI';
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 38, 207);
+    text-align: center;
+    width: 100vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}

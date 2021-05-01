@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Treinamento Indaiatuba Abril 2021</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/utilizando-bootstrap.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#conteudo">CONTEUDO</a>&nbsp&nbsp&nbsp&nbsp
+        <a href="#cadastrar">CADASTRAR</a>&nbsp&nbsp&nbsp&nbsp
+        <a href="#lista">LISTA DE ALUNOS</a>
+    </nav>
+
+    <header>
+        <h1>Treinamento Indaiatuba Abril 2021</h1>
+    </header>
+
+    <section id="banner">
+        <img src="https://i.picsum.photos/id/210/1600/350.jpg?hmac=u5C8ihcdKxZE0rfrOYEZtcZAtuGdQGFflz4x4n9dFDA" alt="">
+    </section>
+
+    <section id="conteudo">
+        <div class="my-container">
+            <h2>Utilizando Bootstrap</h2>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod</li>
+            </ul></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <section id="cadastrar">
+    <div class="my-form">
+            <h2>Cadastro de Aluno</h2>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="nome" class="form-label">Nome completo*</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="cpf" class="form-label">CPF*</label>
+                    <input type="number" class="form-control" id="cpf">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="data" class="form-label">Data de nascimento*</label>
+                    <input type="date" class="form-control" id="data" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="sexo" class="form-label">Sexo*</label>
+                    <select class="form-select" id="sexo" required>
+                        <option></option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="celular" class="form-label">Celular*</label>
+                    <input type="tel" class="form-control" id="celular" placeholder="(99) 999999999" required>
+                </div><br><br><br><br>
+                <hr>
+
+                <div class="col-md-6">
+                    <label for="nivel" class="form-label">Nível*</label>
+                    <select class="form-select" id="nivel" name="nivel" required>
+                        <option value="">Selecione</option>
+                        <option value="novato">Novato</option>
+                        <option value="formado">Formado</option>
+                        <option value="veterano">Veterano</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="media" class="form-label">Média*</label>
+                    <input type="number" class="form-control" id="media" required>
+                </div><br><br><br><br>
+                <hr>
+
+                <p>* Campo obrigatório</p>
+
+                <hr>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" onclick="return validar()">Cadastrar</button>
+                </div>
+            </form>
+    </div>
+    </section>                
+
+    <section id="lista">
+        <div class="my-container">
+        <h2>Lista de Alunos</h2><br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nome Completo</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">Nascimento</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Celular</th>
+                    <th scope="col">Nível</th>
+                    <th scope="col">Média</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td class="p-3 mb-2 bg-danger text-white">4</td>
+                </tr>
+
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td class="p-3 mb-2 bg-success text-white">9</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        Copyright 2021 | VILT GROUP
+    </footer>
+
+    <!-- js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/utilizando-bootstrap.js"></script>
+</body>
+</html>
