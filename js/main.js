@@ -1,46 +1,71 @@
+
 function validar() {
+
   var nome = document.getElementById("nome");
   var cpf = document.getElementById("cpf");
-  var email = document.getElementById("email");
   var data = document.getElementById("data");
-  var celular = document.getElementById("celular");
   var sexo = document.getElementById("sexo");
-  var styles = { border: "2px solid red" }
-  var msg = "Por favor preencha o(s) campo(s) abaixo:\n\n";
+  var email = document.getElementById("email");
+  var celular = document.getElementById("celular");
+  var nivel = document.getElementById("nivel");
 
+
+  // verificar se o nome está vazio
   if (nome.value == "") {
-    msg += "- Nome completo\n";
-    nome.style.outline = "2px solid red"
+      alert("Nome não informado");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      nome.style.backgroundColor = "ff0000";
+      nome.focus();
+      return;
   }
   if (cpf.value == "") {
-    msg += "- CPF\n";
-    cpf.style.outline = "2px solid red"
+      alert("CPF não informado");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      cpf.style.backgroundColor = "ff0000";
+      cpf.focus();
+      return;
   }
   if (data.value == "") {
-    msg += "- Nascimento\n";
-    data.style.outline = "2px solid red"
+      alert("Data não informada");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      data.style.backgroundColor = "ff0000";
+      data.focus();
+      return;
   }
   if (sexo.value == "") {
-    msg += "- Sexo\n";
-    sexo.style.outline = "2px solid red"
+      alert("Sexo não informado");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      sexo.style.backgroundColor = "ff0000";
+      sexo.focus();
+      return;
   }
   if (email.value == "") {
-    msg += "- Email\n";
-    email.style.outline = "2px solid red"
+      alert("Email não informado");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      email.style.backgroundColor = "ff0000";
+      email.focus();
+      return;
   }
   if (celular.value == "") {
-    msg += "- Celular\n";
-    celular.style.outline = "2px solid red"
+      alert("Celular não informado");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      celular.style.backgroundColor = "ff0000";
+      celular.focus();
+      return;
   }
   if (nivel.value == "") {
-    msg += "- Nível\n";
-    nivel.style.outline = "2px solid red"
+      alert("Nível não informado");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      nivel.style.backgroundColor = "ff0000";
+      nivel.focus();
+      return;
   }
-  if (media.value == "") {
-    msg += "- Média\n";
-    media.style.outline = "2px solid red"
+  if (nome.value, cpf.value, data.value == "") {
+      alert("Informe os dados: Nome, CPF e Data");
+      onfocus = "this.style.backgroundColor='#b40000'"
+      nivel.focus();
+      return;
   }
 
-  alert(msg);
-
+  alert("Formulário enviado!");
 }
