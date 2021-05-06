@@ -6,15 +6,16 @@
     <title>Treinamento Indaiatuba Abril 2021</title>
 
     <!-- CSS -->
+    <link rel="shortcut icon" href="br.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <nav id="menu">
         <ul>
-            <li><a href="#conteudo">CONTEÚDO</a></li>
-            <li><a href="#cadastrar">CADASTRAR</a></li>
-            <li><a href="#lista">LISTA DE ALUNOS</a></li> 
+            <li><a href="#conteudo">conteúdo</a></li>
+            <li><a href="#cadastrar">cadastrar</a></li>
+            <li><a href="#lista">lista de alunos</a></li> 
         </ul>
     </nav>
     <header>
@@ -26,8 +27,7 @@
     </section>
 
     <section id="conteudo">
-        <div class="my-container">
-            
+        <div class="cont">
             <h2>HTML básico</h2>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -40,7 +40,7 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>
-            <ul>
+            <ul class="cabeca">
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -76,27 +76,27 @@
         </div>
     </section>
     <section id="cadastrar">
-        <div class="my-container">
+        <div class="cadastro">
         <h2>Cadastro de Aluno</h2>
         <form>
-        <ul>
+        <ul class="dados">
         <li>
-        <label>Nome completo*</label>
+        <label class="label">Nome completo*</label>
         <input type="text" id="nome" name="" onclick="style.outline = null"
         required>
         </li>
         <li>
-        <label>CPF*</label>
+        <label class="label">CPF*</label>
         <input type="text" id="cpf" name="" onclick="style.outline = null"
         required>
         </li>
         <li>
-        <label>Nascimento*</label>
+        <label class="label">Nascimento*</label>
         <input type="text" id="data" name="" onclick="style.outline = null"
         required placeholder="dd/mm/aaaa">
         </li>
         <li>
-        <label>Sexo*</label>
+        <label class="label">Sexo*</label>
         <select id="sexo" name="" onclick="style.outline = null" required>
         <option value="">Selecione</option>
         <option value="Masculino">Masculino</option>
@@ -104,17 +104,17 @@
         </select>
         </li>
         <li>
-        <label>Email*</label>
+        <label class="label">Email*</label>
         <input type="email" id="email" name="" onclick="style.outline = null"
         required>
         </li>
         <li>
-        <label>Celular*</label>
+        <label class="label">Celular*</label>
         <input type="text" id="celular" name="" onclick="style.outline =null" required>
         </li>
-        <hr>
+        <hr class="hr">
         <li>
-            <label>Nível*</label>
+            <label class="label">Nível*</label>
             <select id="nivel" name="nivel" onclick="style.outline = null"required>
                 <option value="">Selecione</option>
                 <option value="novato">Novato</option>
@@ -123,22 +123,22 @@
             </select>
         </li>
         <li>
-            <label>Média*</label>
+            <label class="label">Média*</label>
             <input type="text" id="media" name="media" onclick="style.outline =null" required>
         </li>
         </ul>
-        <hr>
+        <hr class="hr">
         <p>
             * Campo obrigatório
         </p>
-        <hr>
+        <hr class="hr">
         <button type="submit" onclick="return validar()">Cadastrar</button>
         </form>
         </div>
-</section>
+    </section>
     <section id="lista">
-        <div class="my-container">
-        <h2>Lista de alunos</h2>
+        <div class="list">
+            <h2 div="titlet">Lista de alunos</h2>
         <table>
         <thead>
         <tr>
@@ -171,7 +171,7 @@
             <td>item</td>
             <td>item</td>
             <td>item</td>
-            <td class="color-green">9</td>
+            <td class="color-red">9</td>
             </tr>
             </tbody>
             </table>
