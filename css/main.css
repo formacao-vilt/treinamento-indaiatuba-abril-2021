@@ -11,8 +11,6 @@ a {
 }
 
 body {
-    background: var(--primary-color);
-    color: #222;
     margin: 0;
     padding: 0 !important;
     font-family: 'Montserrat', sans-serif !important;
@@ -37,7 +35,7 @@ img {
 }
 
 header {
-    height: calc(100vh - 250px);
+    height: 400px;
     color: #000;
     background-image: url("https://ligaempresarialportugal.mygol.es/upload/68/BF/nxbmxtno.png") !important;
 }
@@ -65,10 +63,10 @@ a {
 .my-navbar {
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    padding: 20px 0 !important;
     background: rgba(0, 0, 0, 0.226);
     height: 70px;
+    padding-left: 30% !important;
 }
 
 .my-navbar a {
