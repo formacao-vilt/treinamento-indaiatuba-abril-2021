@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 body {
-	font-family: "Poppins", sans-serif;
 	background: #f5f5f5;
 }
 
@@ -12,7 +10,7 @@ header {
 
 nav {
 	text-align: center;
-	background: #532b8f;
+	background: #7952b3;
 	padding: 20px;
 }
 
@@ -22,7 +20,6 @@ nav a {
 	margin: 0 10px;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: all 0.2s ease;
 }
 
 nav a:hover {
@@ -39,7 +36,7 @@ hr {
 }
 
 .my-container {
-	max-width: 1250px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -60,47 +57,33 @@ section:nth-child(odd) {
 	width: 100%;
 }
 
-.h2, h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+#inscrevase {
+
 }
 
-.form-group {
-	margin: 1rem auto;
-}
-
-#buttonSubmit {
-	background-color: #532b8f;
-	transition: all 0.2s ease;
-}
-
-#buttonSubmit:hover {
-	font-weight: bold;
-}
-
-#cadastrar ul {
+#inscrevase ul {
 	padding: 0;
 	list-style: none;
 	margin-bottom: 30px;
 }
 
-#cadastrar ul li {
+#inscrevase ul li {
 	display: block;
 	margin-bottom: 20px;
 }
 
-#cadastrar ul li label {
+#inscrevase ul li label {
 	display: inline-block;
 }
 
-#cadastrar ul li input {
+#inscrevase ul li input {
 	min-width: 200px;
 	display: inline-block;
 }
 
 footer {
 	padding: 60px 20px;
-	background: #532b8f;
+	background: #06549c;
 	color: #fff;
 	text-align: center;
 }
